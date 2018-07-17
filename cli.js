@@ -10,4 +10,12 @@ var term = process.argv.slice(3).join("+");
 
 // Then write an if/else statement to print to the console whether a show or actor is being searched for.
 
-console.log(search, + " " + term);
+if (search === "search") {
+    console.log("search")
+} else if (search === "actor") {
+    console.log("actor")
+}
+
+module.exports = {
+    search: search
+}
